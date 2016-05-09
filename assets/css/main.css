@@ -172,8 +172,6 @@ td, th {
 }
 body {
     font-size: 14px;
-    color: #000;
-    background:#ccc;
     font-family: 'MyriadPro', sans-serif;
     font-weight: 300;
 }
@@ -270,13 +268,12 @@ Menu Mobile
     position:relative;
 }
 .rst-toggle-menu{
-    padding:10px 15px;
+    padding:10px;
     overflow: hidden;
-    width:60px;
+    width:50px;
     height: auto;
     right: 0;
     cursor:pointer;
-    display: block;
     transition:all 0.2s ease;
     -ms-transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
@@ -289,8 +286,7 @@ Menu Mobile
     top:4px;
 }
 .rst-toggle-menu span{
-    display: block;
-    width:30px;
+    display:block;
     border:2px solid #000;
     margin:0 auto 4px;
     transition: all 0.4s ease;
@@ -380,7 +376,7 @@ Menu Mobile
 .rs-animate.animated{
     opacity:1;
 }
-
+/* end CSS for slide animate */
 .slick-slide img{
     width:100%;
     height: auto;
@@ -396,6 +392,7 @@ Menu Mobile
     height: 100%;
     padding:40px;
     background:rgba(0,0,0,0.3);
+    color:#fff;
 }
 
 
