@@ -8,3 +8,5 @@ HTML5 Template
 - Modernizr
 - SmoothScroll Js
 - GoogleAnalytics JS
+- Slick
+- Animate CSS
