@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('myriadpro/MyriadPro-Regular.eot');
+	src: url('myriadpro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('myriadpro/MyriadPro-Regular.woff') format('woff'),
+		url('myriadpro/MyriadPro-Regular.woff2') format('woff2'),
+		url('myriadpro/MyriadPro-Regular.ttf') format('truetype'),
+		url('myriadpro/MyriadPro-Regular.svg#MyriadPro') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro';
+	src: url('myriadpro/MyriadPro-Bold.eot');
+	src: url('myriadpro/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('myriadpro/MyriadPro-Bold.woff') format('woff'),
+		url('myriadpro/MyriadPro-Bold.woff2') format('woff2'),
+		url('myriadpro/MyriadPro-Bold.ttf') format('truetype'),
+		url('myriadpro/MyriadPro-Bold.svg#MyriadPro') format('svg');
+	font-style: normal;
+	font-weight: bold;
+}
