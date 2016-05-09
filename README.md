@@ -1,6 +1,6 @@
 # HTML5-Template
-HTML5 Template
 
+## Feature
 
 - Meta tag SEO
 - Meta tag Responsive
@@ -10,3 +10,4 @@ HTML5 Template
 - GoogleAnalytics JS
 - Slick
 - Animate CSS
+- Menu responsive

@@ -1,12 +1,44 @@
+
 (function($) {
     'use strict';
 
     $(function() {
 
-        /*  ==========================================================================
-                    Animate Slide
-                    ========================================================================== */
+        /* ==========================================================================
+            Menu Mobile
+            ========================================================================== */
+        $(".rst-main-navigation li.menu-item-has-children").prepend("<span class='rst-open-menu-mobile'></span>");
+        $(".rs-toggle-menu-sidebar").click(function() {
+            $(this).toggleClass("active");
+            // Sidebar menu
+            if ($(this).hasClass("active")) {
+                $(".rst-main-navigation").stop().animate({
+                    right: 0,
+                }, 300);
+                $(".overlay-mobile").show();
+            } else {
+                $(".rst-main-navigation").stop().animate({
+                    right: -320,
+                }, 300);
+                $(".overlay-mobile").hide();
+            }
+        });
+        $(".rst-open-menu-mobile").on("click", function(event) {
+            $(this).toggleClass("active");
+            $(this).parent("li").siblings().find("ul").slideUp();
+            $(this).parent("li").siblings().find(".rst-open-menu-mobile").removeClass("active");
+            $(this).siblings('ul').slideToggle();
+        });
 
+        $(".overlay-mobile,.rst-top-main-navigation .rst-toggle-menu").click(function(){
+            $(".rs-toggle-menu-sidebar").click();
+        });
+
+
+
+        /*  ==========================================================================
+            Animate Slide
+            ========================================================================== */
         function activeAnimate(slide, currentSlide) {
             slide.find(".slide-item[data-slick-index=" + currentSlide + "]").find(".rs-animate").addClass("animated");
 
@@ -29,7 +61,6 @@
                     "animation-duration": duration,
                     "-webkit-animation-duration": duration,
                 });
-
             })
         }
 
@@ -84,97 +115,10 @@
         });
 
 
-        /*  ==========================================================================
-            Fade and Animate Slide
-            ========================================================================== */
-        var animate_slide2 = $('.fade-animate-slide2');
-
-        /*  --------------------------------
-            Init slide
-        ------------------------------------ */
-        animate_slide2.on('init', function() {
-            $(this).addClass("first");
-        });
-
-        /*  --------------------------------
-            Setup slide
-        ------------------------------------ */
-        animate_slide2.slick({
-            dots: true,
-            fade: true,
-        });
-
-        /*  --------------------------------
-            Active animate first run times
-        ------------------------------------ */
-        animate_slide2.on('setPosition', function() {
-            if ($(this).hasClass("first")) {
-                activeAnimate($(this), 0);
-                animate_slide2.removeClass("first");
-            }
-        });
-
-        /*  --------------------------------
-            After change Slide
-        ------------------------------------ */
-        animate_slide2.on('afterChange', function(event, slick, currentSlide, nextSlide) {
-            activeAnimate($(this), currentSlide);
-        });
-
-        /*  --------------------------------
-            Before change slide
-        ------------------------------------ */
-        animate_slide2.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-            deActiveAnimate($(this), currentSlide);
-        });
-
-
-
-        /*  ==========================================================================
-            Vertical and animate slide
-            ========================================================================== */
-        var vertical_animate = $('.vertical-animate-slide');
-
-        /*  --------------------------------
-            Init slide
-        ------------------------------------ */
-        vertical_animate.on('init', function() {
-            $(this).addClass("first");
-        });
-
-        /*  --------------------------------
-            Setup slide
-        ------------------------------------ */
-        vertical_animate.slick({
-            dots: true,
-            vertical: true,
-            verticalSwiping: true
-        });
-
-        /*  --------------------------------
-            Active animate first run times
-        ------------------------------------ */
-        vertical_animate.on('setPosition', function() {
-            if ($(this).hasClass("first")) {
-                activeAnimate($(this), 0);
-                animate_slide2.removeClass("first");
-            }
-        });
-
-        /*  --------------------------------
-            After change Slide
-        ------------------------------------ */
-        vertical_animate.on('afterChange', function(event, slick, currentSlide, nextSlide) {
-            activeAnimate($(this), currentSlide);
-        });
-
-        /*  --------------------------------
-            Before change slide
-        ------------------------------------ */
-        vertical_animate.on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-            deActiveAnimate($(this), currentSlide);
-        });
-
     }); // end document ready
+
+    $(window).resize(function(){
+
+    });// end window resize
 
 })(jQuery) // end JQuery namespace

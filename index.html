@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
     <head>
         <!-- Basic Page Needs -->
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Slick Animate Template</title>
+        <title>RS Template</title>
         <meta name="description" content="#">
         <meta name="keywords" content="#">
         <meta name="author" content="#">
@@ -14,6 +14,8 @@
         <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="assets/fonts/fonts.css">
         <!-- Animate CSS -->
         <link rel="stylesheet" href="vendors/animate-css/animate.min.css">
         <!-- Slick Slide -->
@@ -22,11 +24,57 @@
         <!-- Custom CSS  -->
         <link rel="stylesheet" href="assets/css/main.css">
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+        <!-- Modernizr js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     </head>
     <body>
-
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
         <div class="container">
-            <h2>Animate</h2>
+            <!-- start:main-header -->
+            <header class="main-header">
+                <div class="rst-wrap-main-navigation">
+                    <div class="overlay-mobile"></div>
+                    <div class="rst-toggle-menu rs-toggle-menu-sidebar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="rst-main-navigation">
+                        <div class="rst-top-main-navigation">
+                            Menu
+                            <div class="rst-toggle-menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li  class="menu-item-has-children"><a href="#">Product</a>
+                                <ul>
+                                    <li class="menu-item-has-children"><a href="#">Product 1</a>
+                                        <ul>
+                                            <li><a href="#">Sub menu 2</a></li>
+                                            <li><a href="#">Sub menu2</a></li>
+                                            <li><a href="#">Sub menu3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Product 2</a></li>
+                                    <li><a href="#">Product 3</a></li>
+                                    <li><a href="#">Product 4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- /main-navigation -->
+            </header>
+            <!-- end:header -->
+            <!-- start: main-slide -->
             <div class="fade-animate-slide">
                 <div class="slide-item">
                     <div class="slide-description">
@@ -90,152 +138,27 @@
                     <img src="assets/images/walle.jpg" alt="">
                 </div>
             </div>
-            <!-- end: animate-slide -->
-            <p>_</p>
-            <p>_</p>
-            <p>_</p>
-                <h2>Fade and animate 2</h2>
-              <div class="fade-animate-slide2">
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="zoomInUp" data-delay="1s" data-duration="2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <h2 class="rs-animate" data-animate="zoomInDown" data-delay="2s" data-duration="3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <h2 class="rs-animate" data-animate="zoomIn" data-delay="3s" data-duration="4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="zoomOut"  data-delay="4s" data-duration="5s">Lorem ipsum dolor sit amet, consectetur adipisi
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.cing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/nemo.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="fadeInUp" data-delay="1s" data-duration="1s">1s Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <h2 class="rs-animate" data-animate="fadeInUp" data-delay="2s" data-duration="2s">2s Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <h2 class="rs-animate" data-animate="fadeInUp" data-delay="3s" data-duration="3s">3s Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="fadeInUp"  data-delay="4s" data-duration="4s">4s Lorem ipsum dolor sit amet, consectetur adipisi
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.cing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/nemo.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipisi
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.cing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/nemo.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem i
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.psum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/toystory.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="fadeInUp" data-delay="2s">Delay Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="bounceOutUp" data-delay="1s"> Delay Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/up.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="flipInX">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="zoomInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/walle.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="rotateInDownRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="rollIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/walle.jpg" alt="">
-                </div>
-            </div>
-            <!-- end: animate-slide -->
-            <p>_</p>
-             <p>_</p>
-            <p>_</p>
-            <p>_</p>
-                <h2>Vertical and animate 2</h2>
-              <div class="vertical-animate-slide">
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="zoomInUp" data-delay="1s" data-duration="2s">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <h2 class="rs-animate" data-animate="zoomInDown" data-delay="2s" data-duration="3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <h2 class="rs-animate" data-animate="zoomIn" data-delay="3s" data-duration="4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="zoomOut"  data-delay="4s" data-duration="5s">Lorem ipsum dolor sit amet, consectetur adipisi
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.cing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/nemo.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="fadeInUp" data-delay="1s" data-duration="1s">1s Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <h2 class="rs-animate" data-animate="fadeInUp" data-delay="2s" data-duration="2s">2s Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <h2 class="rs-animate" data-animate="fadeInUp" data-delay="3s" data-duration="3s">3s Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="fadeInUp"  data-delay="4s" data-duration="4s">4s Lorem ipsum dolor sit amet, consectetur adipisi
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.cing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/nemo.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipisi
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.cing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/nemo.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem i
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.psum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/toystory.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="fadeInUp" data-delay="2s">Delay Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="bounceOutUp" data-delay="1s"> Delay Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/up.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="flipInX">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="zoomInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/walle.jpg" alt="">
-                </div>
-                <div class="slide-item">
-                    <div class="slide-description">
-                        <h2 class="rs-animate" data-animate="rotateInDownRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                        <p class="rs-animate" data-animate="rollIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <img src="assets/images/walle.jpg" alt="">
-                </div>
-            </div>
-            <!-- end: animate-slide -->
-            <p>_</p>
+            <!-- end: main-slide -->
         </div>
-        <!--Javascript Library-->
+
+
+        <!--Javascript Library -->
         <script src="vendors/jquery/jquery-2.2.2.min.js"></script>
+        <!-- Smooth Scroll -->
+        <script src="vendors/smoothscroll/SmoothScroll.js"></script>
         <!-- Slick Slide -->
         <script src="vendors/slick-slide/jquery-migrate-1.4.0.min.js"></script>
         <script src="vendors/slick-slide/slick.min.js"></script>
         <!-- Main Script -->
         <script src="assets/js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
     </body>
 </html>
