@@ -116,6 +116,4 @@
   }); // end document ready
 
 
-  }); // end window resize
-
 })(jQuery) // end JQuery namespace
