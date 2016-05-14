@@ -14,4 +14,4 @@ HTML5 Template  Slick slide , Animate css  , Menu mobile
 - Menu responsive
 
 
-http://hoanguyenxuan.github.io/full-html5-template
+http://hoanguyenxuan.github.io/Full-HTML5-Template
