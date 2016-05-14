@@ -17,7 +17,7 @@
         $(".overlay-mobile").show();
       } else {
         $(".rst-main-navigation").stop().animate({
-          right: -320,
+          right: -250,
         }, 300);
         $(".overlay-mobile").hide();
       }
@@ -32,8 +32,6 @@
     $(".overlay-mobile,.rst-top-main-navigation .rst-toggle-menu").click(function() {
       $(".rs-toggle-menu-sidebar").click();
     });
-
-
 
     /*  ==========================================================================
         Animate Slide
@@ -69,7 +67,6 @@
         $(this).removeClass(animate).removeClass("animated");
       })
     }
-
 
     var animate_slide = $('.fade-animate-slide');
 
@@ -114,6 +111,5 @@
     });
 
   }); // end document ready
-
 
 })(jQuery) // end JQuery namespace
