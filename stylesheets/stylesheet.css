@@ -14,7 +14,10 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
-
+img{
+  max-width:100%;
+  height:auto;
+}
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -243,3 +246,15 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+/* Gallery
+   ========================================================================== */
+.xh-gallery a{
+  display:inline-block;
+  width:150px;
+  height:150px;
+}
+.xh-gallery a img{
+  width:150px;
+  height:150px;
+}
