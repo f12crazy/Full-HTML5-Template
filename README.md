@@ -1,7 +1,7 @@
 HTML5 Template  Slick slide , Animate css  , Menu mobile
 
 
-## Feature
+## Features
 
 - Meta tag SEO
 - Meta tag Responsive
